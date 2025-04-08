@@ -2,50 +2,61 @@
 {
   "depends_on": [],
   "author": "Stephan Bökelmann",
-  "first_used": "2025-03-17",
-  "keywords": ["learning", "exercises", "education", "practice"]
+  "first_used": "2025-04-08",
+  "keywords": ["scrum", "DoD", "DoR", "Story"]
 }
 --->
 
-# Learning Through Exercises
+# Definition of Done vs. Definition of Ready
 
 ## Introduction
-Learning by doing is one of the most effective methods to acquire new knowledge and skills. Rather than passively consuming information, actively engaging in problem-solving fosters deeper understanding and long-term retention. By working through structured exercises, students can grasp complex concepts in a more intuitive and applicable way. This approach is particularly beneficial in technical fields like programming, mathematics, and engineering.
+In agile product development, two key quality gates help ensure a smooth transition from idea to implementation and release: the **Definition of Ready (DoR)** and the **Definition of Done (DoD)**. Understanding their purpose, content, and consequences is critical for effective backlog management and delivery.
 
-### Further Readings and Other Sources
-- [The Importance of Practice in Learning](https://www.sciencedirect.com/science/article/pii/S036013151300062X)
-- "The Art of Learning" by Josh Waitzkin
-- [How to Learn Effectively: 5 Key Strategies](https://www.edutopia.org/article/5-research-backed-learning-strategies)
+The **Definition of Ready** outlines what needs to be true before a User Story can be pulled into a sprint. For example, a ready User Story might:
+- Have a clear and concise description
+- Include acceptance criteria
+- Be estimated
+- Have no unresolved dependencies
+
+Meanwhile, the **Definition of Done** ensures that the implemented work meets a team’s quality standards. A done Story might:
+- Be fully implemented and pass all unit and integration tests
+- Be reviewed and merged to the main branch
+- Have updated documentation
+- Be deployed to a staging environment
+
+Together, these definitions act as guide rails for quality and alignment, from planning to delivery.
+
+In this exercise, you will learn how to formulate meaningful DoR and DoD criteria, evaluate their effectiveness, and apply them to real-world User Stories. help ensure a smooth transition from idea to implementation and release: the **Definition of Ready (DoR)** and the **Definition of Done (DoD)**. Understanding their purpose, content, and consequences is critical for effective backlog management and delivery.
+
+In this exercise, you will learn how to formulate meaningful DoR and DoD criteria, evaluate their effectiveness, and apply them to real-world User Stories.
+
+## Further Readings
+- Scrum.org: [Definition of Done](https://www.scrum.org/resources/definition-done)
+- Roman Pichler: [Definition of Ready vs. Definition of Done](https://www.romanpichler.com/blog/the-definition-of-ready/)
+- Atlassian: [Agile Stories, Epics & Tasks](https://www.atlassian.com/agile/project-management/epics-stories-themes)
 
 ## Tasks
-1. **Write a Summary**: Summarize the concept of "learning by doing" in 3-5 sentences.
-2. **Example Identification**: List three examples from your own experience where learning through exercises helped you understand a topic better.
-3. **Create an Exercise**: Design a simple exercise for a topic of your choice that someone else could use to practice.
-4. **Follow an Exercise**: Find an online tutorial that includes exercises and complete at least two of them.
-5. **Modify an Existing Exercise**: Take a basic problem from a textbook or online course and modify it to make it slightly more challenging.
-6. **Pair Learning**: Explain a concept to a partner and guide them through an exercise without giving direct answers.
-7. **Review Mistakes**: Look at an exercise you've previously completed incorrectly. Identify why the mistake happened and how to prevent it in the future.
-8. **Time Challenge**: Set a timer for 10 minutes and try to solve as many simple exercises as possible on a given topic.
-9. **Self-Assessment**: Create a checklist to evaluate your own performance in completing exercises effectively.
-10. **Reflect on Progress**: Write a short paragraph on how this structured approach to exercises has influenced your learning.
+1. **Analyze** the following User Story:
+   > "As a user, I want to receive an email when my password is changed so I can be alerted to potential security issues."
 
-<details>
-  <summary>Tip for Task 5</summary>
-  Try making small adjustments first, such as increasing the difficulty slightly or adding an extra constraint.
-</details>
+   - Define what the **Definition of Ready** might include for this Story.
+   - Define a realistic **Definition of Done**.
+
+2. **Create** one User Story for a feature of your choice and write:
+   - Acceptance criteria
+   - DoR and DoD checklists
+
+3. **Review** a peer's User Story and provide feedback:
+   - Are the criteria specific and actionable?
+   - Is the DoD testable and verifiable?
 
 ## Questions
-1. What are the main benefits of learning through exercises compared to passive learning?
-2. How do exercises improve long-term retention?
-3. Can you think of a subject where learning through exercises might be less effective? Why?
-4. What role does feedback play in learning through exercises?
-5. How can self-designed exercises improve understanding?
-6. Why is it beneficial to review past mistakes in exercises?
-7. How does explaining a concept to someone else reinforce your own understanding?
-8. What strategies can you use to stay motivated when practicing with exercises?
-9. How can timed challenges contribute to learning efficiency?
-10. How do exercises help bridge the gap between theory and practical application?
+- What happens if a Story enters a Sprint without meeting the Definition of Ready?
+- Can something be "done" without being truly "valuable"?
+- Who should be involved in defining and maintaining DoR/DoD?
+- How do you deal with evolving standards (e.g., increasing test coverage)?
 
 ## Advice
-Practice consistently and seek out diverse exercises that challenge different aspects of a topic. Combine exercises with reflection and feedback to maximize your learning efficiency. Don't hesitate to adapt exercises to fit your own needs and ensure that you're actively engaging with the material, rather than just going through the motions.
+
+When working with Definition of Ready and Definition of Done, it's important to keep the DoR short and focused. It should serve to enable the team to begin meaningful work, not act as a bureaucratic barrier. Your Definition of Done, on the other hand, should ensure that work is truly complete: this typically includes functional and automated tests, documentation updates, and meeting all acceptance criteria. It's good practice to revisit both definitions regularly during Retrospectives and refine them as the team matures or requirements change. Consider integrating checklists into your project management tool (like Jira or GitHub Projects) to make these definitions tangible and trackable during everyday work.
 
